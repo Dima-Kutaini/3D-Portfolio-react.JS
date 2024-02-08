@@ -4,10 +4,13 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
-// import menu from "./Menu.jsx/index.js";
-import Menu from "./Menu"; 
+// import menu from "./menu.jsx/index.js";
+import menu from './menu.svg';
+// import Menu from "./Menu"; 
 // import close from "./Close.jsx/index.js";
-import Close from "./Close"; 
+// import Close from "./Close"; 
+import close from "./close.svg";
+
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -38,8 +41,8 @@ export {
   mobile,
   web,
   github,
-  Menu,
-  Close,
+  menu,
+  close,
   css,
   docker,
   figma,
