@@ -5,6 +5,9 @@ import nextJs from '../assets/tech/nextJs.png';
 import postman from '../assets/tech/postman.png';
 import expressJs from '../assets/tech/expressJs.png';
 import tableau from '../assets/tech/tableau.png';
+import youtube from '../assets/youtube.jpg';
+import codebuilder from '../assets/codeBuilder.jpg';
+import project from '../assets/project.jpg';
 
 import {
   mobile,
@@ -16,21 +19,15 @@ import {
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
   mongodb,
   git,
-  figma,
   docker,
   meta,
   starbucks,
-  tesla,
   shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
+  
 } from '../assets';
 
 export const navLinks = [
@@ -215,12 +212,12 @@ const testimonials = [
 
 const projects = [
   {
-    name: 'Car Rent',
+    name: 'CodeBuilder',
     description:
-      'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+      'CodeBuilder is a tool for creating and saving various code snippets, building your own code snippet library.',
     tags: [
       {
-        name: 'react',
+        name: 'NextJS',
         color: 'blue-text-gradient',
       },
       {
@@ -232,13 +229,14 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: carrent,
-    source_code_link: 'https://github.com/',
+    image: codebuilder,
+    source_code_link: 'https://github.com/HackYourFuture-CPH/CodeBuilder',
+    demo: 'https://codebuilder.dev/',
   },
   {
-    name: 'Job IT',
+    name: 'YouTube app',
     description:
-      'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
+      ' A responsive ReactJS application consisting of video sections, custom categories, channel pages , where you can play videos straight from YouTube App.',
     tags: [
       {
         name: 'react',
@@ -249,24 +247,25 @@ const projects = [
         color: 'green-text-gradient',
       },
       {
-        name: 'scss',
+        name: 'css',
         color: 'pink-text-gradient',
       },
     ],
-    image: jobit,
-    source_code_link: 'https://github.com/',
+    image: youtube,
+    source_code_link: 'https://github.com/Dima-Kutaini/React-Project',
+    demo: 'https://youtube-app-hazel.vercel.app/',
   },
   {
-    name: 'Trip Guide',
+    name: 'Interior Designer Website',
     description:
       'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
     tags: [
       {
-        name: 'nextjs',
+        name: 'Javascript',
         color: 'blue-text-gradient',
       },
       {
-        name: 'supabase',
+        name: 'HTML',
         color: 'green-text-gradient',
       },
       {
@@ -274,8 +273,10 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: tripguide,
-    source_code_link: 'https://github.com/',
+    image: project,
+    source_code_link:
+      'https://github.com/Dima-Kutaini/HTML-CSS-Javascript-project',
+    demo: 'https://html-css-javascript-project.vercel.app/',
   },
 ];
 
