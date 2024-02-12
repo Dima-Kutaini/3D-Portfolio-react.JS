@@ -4,11 +4,11 @@ import React, { Suspense, useEffect, useState } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
 import CanvasLoader from '../Loader';
-const Computers = ({isMobile}) => {
+const Computers = ({ isMobile }) => {
   const computer = useGLTF('./desktop_pc/scene.gltf');
 
   return (
-    <mesh >
+    <mesh>
       <hemisphereLight
         intensity={5}
         groundColor="black"
@@ -25,7 +25,7 @@ const Computers = ({isMobile}) => {
       />
       <primitive
         object={computer.scene}
-        scale={ isMobile? 0.7 : 0.75}
+        scale={isMobile ? 0.7 : 0.75}
         position={isMobile ? [0, -3, -2.2] : [0, -3.75, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
@@ -34,22 +34,21 @@ const Computers = ({isMobile}) => {
 };
 
 const ComputersCanvas = () => {
-  const [isMobile, setIsMobile]=useState(false); 
+  const [isMobile, setIsMobile] = useState(false);
 
-  useEffect(()=>{
-    const mediaQuery=window.matchMedia("(max-width:500px)"); 
-    setIsMobile(mediaQuery.matches); 
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width:500px)');
+    setIsMobile(mediaQuery.matches);
 
-    const handleMediaQueryChange=(event)=>{
-      setIsMobile(event.matches); 
-    }
+    const handleMediaQueryChange = (event) => {
+      setIsMobile(event.matches);
+    };
 
-    mediaQuery.addEventListener("change", handleMediaQueryChange); 
-    return()=>{
-      mediaQuery.removeEventListener("change", handleMediaQueryChange); 
-    }
-
-  }, [])
+    mediaQuery.addEventListener('change', handleMediaQueryChange);
+    return () => {
+      mediaQuery.removeEventListener('change', handleMediaQueryChange);
+    };
+  }, []);
 
   return (
     <Canvas
@@ -57,7 +56,7 @@ const ComputersCanvas = () => {
       shadows
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}>
-      <Suspense fallback={<CanvasLoader/>}>
+      <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}

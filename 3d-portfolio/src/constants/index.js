@@ -1,5 +1,11 @@
 /** @format */
-// import {scs} from "../assets"; 
+//  import scs from "../assets/company/scs.png";
+import mysql from '../assets/tech/mysql.png';
+import nextJs from '../assets/tech/nextJs.png';
+import postman from '../assets/tech/postman.png';
+import expressJs from '../assets/tech/expressJs.png';
+import tableau from '../assets/tech/tableau.png';
+
 import {
   mobile,
   backend,
@@ -25,7 +31,6 @@ import {
   jobit,
   tripguide,
   threejs,
-
 } from '../assets';
 
 export const navLinks = [
@@ -84,13 +89,19 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: 'Redux Toolkit',
-    icon: redux,
+    name: 'NextJs',
+    icon: nextJs,
   },
+
   {
     name: 'Tailwind CSS',
     icon: tailwind,
   },
+  {
+    name: 'Express JS',
+    icon: expressJs,
+  },
+
   {
     name: 'Node JS',
     icon: nodejs,
@@ -100,20 +111,24 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: 'Three JS',
-    icon: threejs,
+    name: 'Postman',
+    icon: postman,
   },
   {
     name: 'git',
     icon: git,
   },
   {
-    name: 'figma',
-    icon: figma,
+    name: 'mySQL',
+    icon: mysql,
   },
   {
     name: 'docker',
     icon: docker,
+  },
+  {
+    name: 'Tableau',
+    icon: tableau,
   },
 ];
 
@@ -134,7 +149,7 @@ const experiences = [
   {
     title: 'Trainer and Lecturer',
     company_name: 'Syrian Computer Society (SCS)',
-    // icon: "",
+    //  icon: scs,
     iconBg: '#E6DEDD',
     date: 'Jun 2006 - Jun 2008',
     points: [
