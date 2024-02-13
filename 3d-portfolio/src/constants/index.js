@@ -27,7 +27,6 @@ import {
   meta,
   starbucks,
   shopify,
-  
 } from '../assets';
 
 export const navLinks = [
@@ -186,27 +185,21 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
-    name: 'Sara Lee',
-    designation: 'CFO',
-    company: 'Acme Co',
-    image: 'https://randomuser.me/api/portraits/women/4.jpg',
+      'Dima has successfully made a career switch from teaching to web development, and I witnessed her work incredibly hard during HackYourFutures intensive, front-end web development boot camp over the period of October 2022 to July 2023. If you are looking for a talented, motivated junior frontend developer I would highly encourage reaching out to Dima 🤓',
+    name: 'René Jøhnke ',
+    designation: 'Project Manager',
+    company: 'HackYourFuture Denmark',
+    image:
+      'https://media.licdn.com/dms/image/C4E03AQHEPAtr-MOoMg/profile-displayphoto-shrink_800_800/0/1653299418473?e=1713398400&v=beta&t=nvi1OjzK-ypu6gmpLBsbcvGuNYvXWk6fL2NiqTQ8FA4',
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: 'Chris Brown',
-    designation: 'COO',
-    company: 'DEF Corp',
-    image: 'https://randomuser.me/api/portraits/men/5.jpg',
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: 'Lisa Wang',
-    designation: 'CTO',
-    company: '456 Enterprises',
-    image: 'https://randomuser.me/api/portraits/women/6.jpg',
+      'Dima is an outstanding web developer with a remarkable ability to adapt and learn quickly.During her journey at the HackYourFuture boot camp, Dima truly shone in the final project. She not only showcased her technical prowess but also demonstrated an exceptional aptitude for teamwork.If your team is in search of a talented individual who brings a unique blend of technical expertise and a growth mindset, I highly recommend Dima. She has the potential to make a significant impact in both front-end and back-end roles.',
+    name: 'Maher Hussain',
+    designation: 'Frontend Developer',
+    company: 'Ucommerce',
+    image:
+      'https://media.licdn.com/dms/image/D4E03AQHVL2JorpNt9w/profile-displayphoto-shrink_400_400/0/1667716593585?e=1713398400&v=beta&t=CISliVo8nmyZ8tcdScrENj-SoYiHznNgrCNOybow2VM',
   },
 ];
 
