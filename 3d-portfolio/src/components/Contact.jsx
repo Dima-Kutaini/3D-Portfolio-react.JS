@@ -8,8 +8,8 @@ import {SectionWrapper} from "../hoc";
 import { slideIn } from '../utils/motion';
 
  //template_ph9lgxs
- // service_h44g47u
- // DFYzlN-r1-IRa0uda     //key
+ //  service_h44g47u
+ //6R5nJurdDFlISW_iX //key
 const Contact = () => {
   const fromRef= useRef(); 
   const [form, setForm]=useState({
@@ -26,32 +26,35 @@ const Contact = () => {
   const handleSubmit=(e)=>{
  e.preventDefault();
  setLoading(true); 
-  emailjs.send(
-    'service_h44g47u',
-    'template_ph9lgxs',
-    {
-      from_name: form.name,
-      to_name: 'Dima',
-      from_email: form.email,
-      to_email: 'deemakutainy@gmail.com',
-      message: form.message,
-    },
-    'DFYzlN-r1-IRa0uda '
-  )
-  .then(()=>{
-    setLoading(false); 
-    alert("Thank you, I will get back to you as soon as possible"); 
-    setForm({
-      name:"",
-      email:"", 
-      message:"",
-    })
-
-  }, (error)=>{
-    setLoading(false)
-    // console.log(error); 
-    alert("Something went wrong!")
-  })
+  emailjs
+    .send(
+      'service_h44g47u',
+      'template_ph9lgxs',
+      {
+        from_name: form.name,
+        to_name: 'Dima',
+        from_email: form.email,
+        to_email: 'deemakutainy@gmail.com',
+        message: form.message,
+      },
+      '6R5nJurdDFlISW_iX'
+    )
+    .then(
+      () => {
+        setLoading(false);
+        alert('Thank you, I will get back to you as soon as possible');
+        setForm({
+          name: '',
+          email: '',
+          message: '',
+        });
+      },
+      (error) => {
+        setLoading(false);
+        console.log(error);
+        alert('Something went wrong!');
+      }
+    );
 
   }
   return (
@@ -100,8 +103,8 @@ const Contact = () => {
           </label>
           <button
             type="submit"
-            className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-primary rounded-xl">
-            {loading ? 'sending...' : 'send'}
+            className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl">
+            {loading ? 'Sending...' : 'Send'}
           </button>
         </form>
       </motion.div>

@@ -1,4 +1,14 @@
-/** @format */
+// import React from 'react'
+
+// function Stars() {
+//   return (
+//     <div>Stars</div>
+//   )
+// }
+
+// export default Stars
+
+// /** @format */
 
 import React from 'react';
 import { useState, useRef, Suspense } from 'react';
@@ -11,9 +21,7 @@ const Stars = ({ props }) => {
   // const sphere=random.inSphere(new Float32Array(5000), {radius:1.2});
   const sphere = random
     .inSphere(new Float32Array(5000), { radius: 1.2 })
-    .filter((value) => !isNaN(value));
-
-  // Then use sphere in your Points component
+    // .filter((value) => !isNaN(value));
 
   // useFrame = ((state) => {
 
@@ -22,8 +30,6 @@ const Stars = ({ props }) => {
   // });
 
   useFrame(() => {
-    // Your animation logic here
-    // For example, rotating the group
     ref.current.rotation.y -= 0.002;
     ref.current.rotation.x -= 0.003;
   });
@@ -51,7 +57,7 @@ const StarsCanvas = () => {
   return (
     <div className="w-full h-auto absolute inset-0 z-[-1]">
       <Canvas camera={{ position: [0, 0, 1] }}>
-        <Suspense fallback={null}>
+        <Suspense >
           <Stars />
         </Suspense>
 

@@ -12,10 +12,8 @@ const Earth = () => {
     scale={2.5}
     position-y={0}
   rotation-y={0}
-    >
+    />
 
-
-    </primitive>
   )
 }
 
@@ -23,7 +21,7 @@ const EarthCanvas=()=>{
   return (
     <Canvas
       shadows
-      frameloop="demand"
+      frameLoop="demand"
       gl={{ preserveDrawingBuffer: true }}
       camera={{
 fov:45, 
