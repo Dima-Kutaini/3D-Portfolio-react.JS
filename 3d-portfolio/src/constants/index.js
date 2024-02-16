@@ -8,6 +8,8 @@ import tableau from '../assets/tech/tableau.png';
 import youtube from '../assets/youtube.jpg';
 import codebuilder from '../assets/codeBuilder.jpg';
 import project from '../assets/project.jpg';
+import scs from "../assets/company/scs.png"; 
+import teacher from "../assets/company/teacher.jpeg"
 
 import {
   mobile,
@@ -132,7 +134,7 @@ const experiences = [
   {
     title: 'Teacher',
     company_name: 'Syrian Ministry Of Education',
-    icon: starbucks,
+    icon: teacher,
     iconBg: '#383E56',
     date: 'August 2006 - Jun 2015',
     points: [
@@ -145,7 +147,7 @@ const experiences = [
   {
     title: 'Trainer and Lecturer',
     company_name: 'Syrian Computer Society (SCS)',
-    //  icon: scs,
+    icon: scs,
     iconBg: '#E6DEDD',
     date: 'Jun 2006 - Jun 2008',
     points: [

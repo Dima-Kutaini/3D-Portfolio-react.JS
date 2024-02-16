@@ -10,7 +10,7 @@ import {
   useTexture,
 } from '@react-three/drei';
 import CanvasLoader from '../Loader';
-import { MeshStandardMaterial, IcosahedronGeometry } from 'three'; // Import IcosahedronGeometry
+// import { MeshStandardMaterial, IcosahedronGeometry } from 'three'; // Import IcosahedronGeometry
 
 const Ball = (props) => {
   const [decal] = useTexture([props.imgUrl]);
@@ -38,6 +38,7 @@ const Ball = (props) => {
           rotation={[2 * Math.PI, 0, 6.25]}
           flatShading
           map={decal}
+          scale={1}
         />
       </mesh>
     </Float>
@@ -47,7 +48,8 @@ const Ball = (props) => {
 const BallCanvas = ({ icon }) => {
   return (
     <Canvas
-      frameLoop="demand"
+      frameloop="demand"
+      dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}>
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enableZoom={false} />
