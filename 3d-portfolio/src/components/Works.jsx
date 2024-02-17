@@ -51,7 +51,7 @@ const ProjectCard = ({
               <img
                 src={vercel}
                 alt="vercel"
-                className="w-1/2 h-1/2 object-contain"
+                className="mt-4 w-1/2 h-1/2 object-contain"
               />
             </div>
           </div>
