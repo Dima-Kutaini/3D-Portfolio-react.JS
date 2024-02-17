@@ -1,5 +1,5 @@
 /** @format */
-//  import scs from "../assets/company/scs.png";
+
 import mysql from '../assets/tech/mysql.png';
 import nextJs from '../assets/tech/nextJs.png';
 import postman from '../assets/tech/postman.png';
@@ -26,9 +26,9 @@ import {
   mongodb,
   git,
   docker,
-  meta,
-  starbucks,
-  shopify,
+  // meta,
+  // starbucks,
+  // shopify,
 } from '../assets';
 
 export const navLinks = [

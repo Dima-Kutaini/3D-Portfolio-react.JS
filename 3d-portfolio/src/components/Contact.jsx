@@ -8,9 +8,6 @@ import { styles } from '../styles';
 import { EarthCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
-//template_ph9lgxs
-//  service_h44g47u
-//6R5nJurdDFlISW_iX //key
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -24,12 +21,15 @@ const Contact = () => {
     setForm({ ...form, [name]: value });
   };
   const handleSubmit = (e) => {
+    const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+    const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+    const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
     e.preventDefault();
     setLoading(true);
     emailjs
       .send(
-        'service_h44g47u',
-        'template_ph9lgxs',
+        serviceId,
+        templateId,
         {
           from_name: form.name,
           to_name: 'Dima',
@@ -37,7 +37,7 @@ const Contact = () => {
           to_email: 'deemakutainy@gmail.com',
           message: form.message,
         },
-        '6R5nJurdDFlISW_iX'
+        publicKey
       )
       .then(
         () => {
