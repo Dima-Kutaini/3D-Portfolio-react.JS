@@ -23,12 +23,12 @@ const Hero = () => {
             I create user interfaces and <br className="sm:block hidden" />
             develop dynamic web applications
           </p>
-          <div className="mt-20 ml-20 text-center items-center justify-center xs:w-50 h-90">
+          <div className="mt-10 ml-20 text-center items-center justify-center xs:w-50 h-90">
             <img
               // src="./desktop_pc/computer.png"
               src="https://raw.githubusercontent.com/BhavyaCodes/BhavyaCodes/master/.github/cat.gif"
               alt="computer "
-              className="object-fill h-96 w-100"
+              className="object-fill h-96 w-100 "
             />
           </div>
         </div>
