@@ -219,7 +219,7 @@ const projects = [
   {
     name: 'Interior Designer Website',
     description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+      'A responsive website for interior Designer. featuring an animated page to enhance the user interface and includes a counter.',
     tags: [
       {
         name: 'Javascript',

@@ -8,6 +8,8 @@ import { styles } from '../styles';
 import { EarthCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
+import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -65,6 +67,39 @@ const Contact = () => {
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
+        <div className="flex items-center justify-between mt-8">
+          <a
+            href="https://www.linkedin.com/in/dima-kutaini/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mr-4">
+            <FaLinkedin
+              size={24}
+              className="text-white hover:text-primary"
+            />
+          </a>
+          <a
+            href="https://github.com/Dima-Kutaini"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mr-4">
+            <FaGithub
+              size={24}
+              className="text-white hover:text-primary"
+            />
+          </a>
+
+          <div className="flex-grow"></div>
+
+          <div className="flex items-center">
+            <FaEnvelope
+              size={24}
+              className="text-white mr-2"
+            />
+            <p className="text-white">deemakutainy@gmail.com</p>
+          </div>
+        </div>
+
         <form
           ref={formRef}
           onSubmit={handleSubmit}
@@ -76,7 +111,7 @@ const Contact = () => {
               name="name"
               value={form.name}
               onChange={handleChange}
-              placeholder="What's your good name?"
+              placeholder="What's your name?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
