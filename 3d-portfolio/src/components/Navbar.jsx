@@ -6,10 +6,16 @@ import { styles } from '../styles';
 import myLogo from '../assets/myLogo.jpg';
 import { navLinks } from '../constants';
 import { menu, close } from '../assets';
+import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 
 const Navbar = () => {
   const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
+
+  const scrollToTop = () => {
+    setActive('');
+    window.scrollTo(0, 0);
+  };
 
   return (
     <nav
@@ -18,10 +24,7 @@ const Navbar = () => {
         <Link
           to="/"
           className="flex items-center gap-2"
-          onClick={() => {
-            setActive('');
-            window.scrollTo(0, 0);
-          }}>
+          onClick={scrollToTop}>
           <img
             src={myLogo}
             alt="logo"
@@ -29,9 +32,39 @@ const Navbar = () => {
           />
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
             Dima &nbsp;
-            <span className="sm:block hidden"> | Web Developer</span>
+            <span className=" md:block hidden "> | Web Developer</span>
           </p>
         </Link>
+        {/* <div className="flex items-center justify-between mt-8"> */}
+        <a
+          href="https://www.linkedin.com/in/dima-kutaini/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mr-4 ml-5 text-white">
+          <FaLinkedin
+            size={24}
+            className="hover:text-primary"
+          />
+        </a>
+        <a
+          href="https://github.com/Dima-Kutaini"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mr-4 text-white">
+          <FaGithub
+            size={24}
+            className="hover:text-primary"
+          />
+        </a>
+        <a
+          href="mailto:deemakutainy@gmail.com?subject=Regarding%20Your%20Portfolio"
+          className="text-white">
+          <FaEnvelope
+            size={24}
+            className="mr-2"
+          />
+        </a>
+        {/* </div> */}
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((link) => (
             <li
@@ -64,7 +97,8 @@ const Navbar = () => {
                   }  font-poppins font-medium curser-pointer text-[16px]`}
                   onClick={() => {
                     setToggle(!toggle);
-                  setActive(link.title);}}>
+                    setActive(link.title);
+                  }}>
                   <a href={`#${link.id}`}>{link.title}</a>
                 </li>
               ))}

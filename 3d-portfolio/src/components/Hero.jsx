@@ -3,7 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
-// import { ComputersCanvas } from './canvas';
+import { SectionWrapper } from '../hoc';
 
 const Hero = () => {
   return (
@@ -28,7 +28,7 @@ const Hero = () => {
               // src="./desktop_pc/computer.png"
               src="https://raw.githubusercontent.com/BhavyaCodes/BhavyaCodes/master/.github/cat.gif"
               alt="computer "
-              className="object-fill h-96 w-100 "
+              className="object-fill h-96 w-100  "
             />
           </div>
         </div>
@@ -57,4 +57,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default SectionWrapper(Hero, "");
