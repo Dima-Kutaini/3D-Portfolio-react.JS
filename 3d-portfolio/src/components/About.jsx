@@ -45,7 +45,7 @@ const About = () => {
         })}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
         I am a highly motivated and creative Junior Software developer with a
-        deep passion for programming and a good foundation in frontend
+        deep passion for programming and a good foundation in frontend and backend
         development. I'm a quick learner and collaborate closely with clients to
         create efficient, scalable, and user-friendly solutions that solve
         real-world problems. I'm constantly seeking new challenges to expand my
