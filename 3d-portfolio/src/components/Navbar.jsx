@@ -43,7 +43,7 @@ const Navbar = () => {
           className="mr-4 ml-5 text-white">
           <FaLinkedin
             size={24}
-            className="hover:text-primary"
+            className="hover:scale-110"
           />
         </a>
         <a
@@ -53,7 +53,7 @@ const Navbar = () => {
           className="mr-4 text-white">
           <FaGithub
             size={24}
-            className="hover:text-primary"
+            className="hover:scale-110"
           />
         </a>
         <a
@@ -61,7 +61,7 @@ const Navbar = () => {
           className="text-white">
           <FaEnvelope
             size={24}
-            className="mr-2"
+            className="mr-2 hover:scale-110"
           />
         </a>
         {/* </div> */}
