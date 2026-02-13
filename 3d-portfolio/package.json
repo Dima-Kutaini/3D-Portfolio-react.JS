@@ -2,6 +2,9 @@
   "name": "3d-portfolio",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "18.x"
+  },
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
     "@react-three/drei": "^9.102.6",
