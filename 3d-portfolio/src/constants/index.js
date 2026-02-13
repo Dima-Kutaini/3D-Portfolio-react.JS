@@ -8,6 +8,7 @@ import codebuilder from '../assets/codeBuilder.jpg';
 import project from '../assets/project.jpg';
 import scs from '../assets/company/scs.png';
 import teacher from '../assets/company/teacher.jpeg';
+import norddjurs from'../assets/company/norddjurs.png'
 
 import {
   mobile,
@@ -124,6 +125,21 @@ const technologies = [
 
 const experiences = [
   {
+    title: 'Administrative Officer & Website Administrator',
+    company_name: 'Norddjurs Kommune ',
+    icon: norddjurs,
+    iconBg: '#383E56',
+    date: 'Juni 2024- present',
+    points: [
+      'Independently managed administrative tasks, case processing, and system support.',
+      'Maintained, structured, and quality-assured data with a strong focus on accuracy and compliance',
+      'Handled invoicing, payments, and financial follow-ups using Excel',
+      'CRegistered, monitored, and archived information in administrative systems (LUDUS and Acadre)',
+      'Coordinated and followed up on absence management and scheduling activities',
+      'Served as Website Administrator for jobogsprogdjurs.dk, responsible for ongoing content updates, maintenance, and quality control',
+    ],
+  },
+  {
     title: 'Teacher',
     company_name: 'Syrian Ministry Of Education',
     icon: teacher,
@@ -153,12 +169,21 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
+      ' Dima Kutaini trådte ind hos os hos Job og Sprog i en kompleks og travl hverdag, og hun viste hurtigt en stor naturlighed og et udpræget overblik. I sin rolle som administrativ medarbejder på sprogskolen håndterede hun kursistadministration, reception, telefoniske henvendelser og kontakten til jobcenteret – altid med professionalisme og et skarpt blik for detaljen. Hun løste sine opgaver med høj kvalitet og tog desuden af egen drift fat på opgaver, hun selv identificerede behovet for. Dima var desuden en særdeles stabil medarbejder, som vi altid kunne regne med i en travl hverdag. Med sin rolige og tillidsvækkende personlighed blev hun hurtigt en værdsat kollega blandt både undervisere og ledelse. Jeg vil til enhver tid give hende mine varmeste anbefalinger og ville ikke tøve med at ansætte hende igen.',
+    name: 'Almaz Mengesha',
+    designation: 'Manager ',
+    company: 'Job&sprog Djurs',
+    image:
+      'https://media.licdn.com/dms/image/v2/D4D03AQG1RSW9EtSxWA/profile-displayphoto-scale_100_100/B4DZiiZl5hGgAg-/0/1755071275396?e=1772668800&v=beta&t=Ooe6Wwvv9VyUCo0GxvDPFo6-UhZ0PjZjQGDTYGccrRU',
+  },
+  {
+    testimonial:
       'Dima has successfully made a career switch from teaching to web development, and I witnessed her work incredibly hard during HackYourFutures intensive, front-end web development boot camp over the period of October 2022 to July 2023. If you are looking for a talented, motivated junior frontend developer I would highly encourage reaching out to Dima 🤓',
     name: 'René Jøhnke ',
     designation: 'Project Manager',
     company: 'HackYourFuture Denmark',
     image:
-      'https://media.licdn.com/dms/image/C4E03AQHEPAtr-MOoMg/profile-displayphoto-shrink_800_800/0/1653299418473?e=1713398400&v=beta&t=nvi1OjzK-ypu6gmpLBsbcvGuNYvXWk6fL2NiqTQ8FA4',
+      'https://media.licdn.com/dms/image/v2/D4D03AQGNsamDkEl1nQ/profile-displayphoto-shrink_400_400/B4DZcw5EdHGkAg-/0/1748871956716?e=1772668800&v=beta&t=fRl_vsR_WOcX8X5iG_eJhuF7D7bYw0uUpgHxXBFL3E4',
   },
   {
     testimonial:
@@ -167,7 +192,7 @@ const testimonials = [
     designation: 'Frontend Developer',
     company: 'Ucommerce',
     image:
-      'https://media.licdn.com/dms/image/D4E03AQHVL2JorpNt9w/profile-displayphoto-shrink_400_400/0/1667716593585?e=1713398400&v=beta&t=CISliVo8nmyZ8tcdScrENj-SoYiHznNgrCNOybow2VM',
+      'https://media.licdn.com/dms/image/v2/D4D35AQFY-tHppg-vXQ/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1730374978547?e=1771624800&v=beta&t=5JausaKEyejmzpZWJZgoOG0KYr31TeHxh4N163IlY6A',
   },
 ];
 
